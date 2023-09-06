@@ -1,6 +1,6 @@
 # Live
 
-http://hiteshrg.github.io/time-tracker
+https://hitesh11gohel.github.io/time-tracker/
 
 # Getting Started with Create React App
 
