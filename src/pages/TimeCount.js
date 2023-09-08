@@ -8,7 +8,7 @@ const TimeCount = () => (
     className="d-flex justify-content-center align-items-center"
     sx={{ height: "100vh" }}
   >
-    <Card className="p-5 bg-light">
+    <Card className="bg-light card-container">
       <Header />
       <FormContainer />
     </Card>

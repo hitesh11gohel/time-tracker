@@ -5,14 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-navy {
+  background: #0f0c29;
+}
+
+.submit-btn {
+  width: 350px;
+}
+
+.header-container,
+.message-container {
+  position: relative;
+}
+
+.header-container:after,
+.message-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.header-container:hover:after,
+.message-container:hover:after {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-container {
+  width: 550px;
+  box-shadow: 15px 15px 25px 0px rgba(255, 255, 255, 0.4) !important;
+}
+
+.custom-text-field-label {
+  width: 125px;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    padding: 0 2rem;
+  }
+
+  .custom-text-field-label {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 255px;
+  }
 }

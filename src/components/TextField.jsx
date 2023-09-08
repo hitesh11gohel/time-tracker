@@ -2,8 +2,8 @@ import React from "react";
 import { Box, TextField } from "@mui/material";
 
 const CustomTextField = ({ label, type, name, value, handleChange }) => (
-  <Box className="m-4 d-flex justify-content-around align-items-center">
-    <Box width={125}>{label} :</Box>
+  <Box className="mx-5 my-4 d-flex justify-content-around align-items-center flex-column flex-sm-row">
+    <Box className="custom-text-field-label">{label} :</Box>
     <TextField
       size="small"
       type={type}

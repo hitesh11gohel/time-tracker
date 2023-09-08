@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CustomTextField from "./TextField";
+import { Box, Button } from "@mui/material";
 import moment from "moment";
-import { Button } from "@mui/material";
+import CustomTextField from "./TextField";
 import AlertBar from "./Alert";
 import Message from "./Message";
 
@@ -85,14 +85,16 @@ const FormContainer = () => {
         handleChange={handleChange}
       />
 
-      <Button
-        variant="outlined"
-        color="inherit"
-        fullWidth
-        onClick={handleSubmit}
-      >
-        Submit
-      </Button>
+      <Box textAlign={"center"} margin={4}>
+        <Button
+          className="submit-btn"
+          variant="outlined"
+          color="inherit"
+          onClick={handleSubmit}
+        >
+          Submit
+        </Button>
+      </Box>
 
       {time.answer && <Message hours={time.totalHours} />}
     </React.Fragment>
