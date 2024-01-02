@@ -1,10 +1,6 @@
 import TimeCount from "./pages/TimeCount";
 function App() {
-  return (
-    <div>
-      <TimeCount />
-    </div>
-  );
+  return <TimeCount />;
 }
 
 export default App;

@@ -11,6 +11,7 @@ const CustomTextField = ({ label, type, name, value, handleChange }) => (
       className="form-control mx-2"
       value={value}
       onChange={(e) => handleChange(e)}
+      placeholder="Please enter break in minutes"
     />
   </Box>
 );
